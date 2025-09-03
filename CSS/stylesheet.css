@@ -1,2 +1,51 @@
 /* header section with be coffee brown, with a light beige lettering in a fantasy or cursive script,
  position will be fixed to top of page, nav links will be a light forest green */
+
+ header {
+    background-color: #4d3626;
+    border-radius: 5px;
+    padding: 20px;
+ }
+
+ nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "grid-left grid-right";
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #c09a7f;
+ }
+
+ nav a {
+    display: flex;
+    color: #c09a7f;
+    text-decoration: none;
+    align-items: center;
+ }
+
+ #grid-right a:hover {
+    color: white;
+    text-decoration: none;
+ }
+
+ nav > div {
+    display: flex;
+    flex-direction: row;
+    
+ }
+
+ a > img {
+    width: 100px;
+ }
+
+ #grid-right {
+    grid-area: grid-right;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+
+ #grid-left {
+    grid-area: grid-left;
+    justify-content: left;
+    align-items: center;
+ }
