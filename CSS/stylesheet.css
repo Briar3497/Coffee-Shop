@@ -1,8 +1,15 @@
+/*Overall layout*/
 html {
     background-color: #1b130e;
 }
 
-header, footer {
+body {
+    display: grid;
+    grid-template-rows: 128.7px auto 414px;
+    padding: 2px;
+}
+
+header {
     background-color: #4d3626;
     border-radius: 5px;
     padding: 20px;
@@ -17,6 +24,15 @@ main {
     border: 2px solid black;
 }
 
+footer {
+    background-color: #4d3626;
+    border-radius: 5px;
+    padding: 20px;
+    border: 2px solid black;
+    color: #c09a7f;
+}
+
+/*Header layout*/
 nav {
     display: grid;
     grid-template-columns: auto auto;
@@ -31,11 +47,6 @@ nav a {
     color: #c09a7f;
     text-decoration: none;
     align-items: center;
- }
-
-#grid-right a:hover {
-    color: white;
-    text-decoration: none;
  }
 
 nav > div {
@@ -53,12 +64,51 @@ a > img {
     justify-content: space-evenly;
  }
 
+#grid-right a:hover {
+    color: white;
+    text-decoration: none;
+ }
+
 #grid-left {
     grid-area: grid-left;
     justify-content: left;
     align-items: center;
  }
 
+#float {
+    position: fixed;
+    top: 0px;
+    left: 8px;
+    width: 95.2vw;
+    height: 94px;
+    background-color: #4d3626;
+    border-radius: 5px;
+    padding: 20px;
+    border: 2px solid black;
+    color: #c09a7f;
+}
+
+/*Footer layout*/
+address {
+    display: flex;
+    gap: 10px;
+}
+
+address p {
+    width: 150px;
+    color: #c09a7f;
+}
+
+.foot-title, h2 {
+    text-decoration: underline;
+}
+
+.phone {
+    color: #c09a7f;
+    text-decoration: none;
+}
+
+ /*Main body layouts*/
 main.cafe {
     background-image: url("../images/cafe-interior.jpg");
     background-position: center;
@@ -78,17 +128,9 @@ h1, main  p {
     color:black;
 }
 
-#line1, #line2, #line3 {
+#line1 {
     font-size: 24px;
     font-style: italic;
-}
-
-#line2 {
-    text-align: center;
-}
-
-#line3 {
-    text-align: right;
 }
 
 .title {
@@ -96,34 +138,12 @@ h1, main  p {
     font-style: italic;
 }
 
-address {
-    display: flex;
-    gap: 10px;
-}
-
-address p {
-    width: 150px;
-    color: #c09a7f;
-}
-
-.foot-title, footer h2 {
-    text-decoration: underline;
-}
-
-.phone {
-    color: #c09a7f;
-    text-decoration: none;
-}
-
-#float {
-    position: fixed;
-    top: 0px;
-    left: 8px;
-    width: 95.2vw;
-    height: 90px;
-    background-color: #4d3626;
+.menu-items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    border: 2px solid #1b130e;
     border-radius: 5px;
-    padding: 20px;
-    border: 2px solid black;
-    color: #c09a7f;
+    background-color: #4d3626;
+    color: white;
 }
