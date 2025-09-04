@@ -2,7 +2,7 @@ html {
     background-color: #1b130e;
 }
 
-header, footer {
+header, main, footer {
     background-color: #4d3626;
     border-radius: 5px;
     padding: 20px;
@@ -52,7 +52,7 @@ a > img {
     align-items: center;
  }
 
-main {
+main.cafe {
     background-image: url("../images/cafe-interior.jpg");
     padding: 40px;
     border-radius: 5px;
