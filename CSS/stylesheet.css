@@ -5,7 +5,7 @@ html {
 
 body {
     display: grid;
-    grid-template-rows: 128.7px auto 414px;
+    grid-template-rows: 128.7px auto 360px;
     padding: 2px;
 }
 
@@ -27,10 +27,13 @@ main {
 footer {
     background-color: #4d3626;
     border-radius: 5px;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     border: 2px solid black;
     color: #c09a7f;
+    display: flex;
+    flex-direction: column;
 }
+
 
 /*Header layout*/
 nav {
@@ -97,9 +100,10 @@ address {
 address p {
     width: 150px;
     color: #c09a7f;
+
 }
 
-.foot-title, h2 {
+.foot-title, .header-element, .contact {
     text-decoration: underline;
 }
 
@@ -111,25 +115,30 @@ address p {
  /*Main body layouts*/
 main.cafe {
     background-image: url("../images/cafe-interior.jpg");
+    background-size: cover;
     background-position: center;
     padding: 40px;
     border-radius: 5px;
     border: 2px solid black;
  }
 
-main > section {
+.backdrop {
     margin: 30px;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid black;
  }
 
-h1, main  p {
+#home-intro, main p {
     margin: 5%;
-    color:black;
 }
 
 #line1 {
     font-size: 24px;
+    font-style: italic;
+}
+
+.header-element {
+    font-size: 60px;
     font-style: italic;
 }
 
@@ -138,12 +147,39 @@ h1, main  p {
     font-style: italic;
 }
 
-.menu-items {
+.menu {
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 10px;
+    
+}
+
+.menu-item {
     border: 2px solid #1b130e;
     border-radius: 5px;
     background-color: #4d3626;
-    color: white;
+    color: #c09a7f; 
+}
+
+.descrip {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding: 8px;
+}
+
+.flavor {
+    font-style: italic;
+}
+
+.item-name {
+    padding: 8px;
+    font-size: larger;
+}
+
+.menu-item img {
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    margin: auto;
 }
