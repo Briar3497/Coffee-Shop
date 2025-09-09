@@ -174,7 +174,8 @@ main.cafe {
 
 .item-name {
     padding: 8px;
-    font-size: larger;
+    font-size: 30px;
+    text-align: center;
 }
 
 .menu-item img {
