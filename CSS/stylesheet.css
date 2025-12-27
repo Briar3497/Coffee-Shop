@@ -184,3 +184,29 @@ main.cafe {
     justify-content: center;
     margin: auto;
 }
+
+@font-face {
+    font-family: 'DnD';
+    src: url('../CSS/BreatheFireIii-PKLOB.ttf') format('truetype');
+}
+
+.DnD-font {
+    font-family: 'DnD';
+    font-size: 60px;
+}
+
+#DnD {
+    background-image: url("../images/DandD.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#event-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
