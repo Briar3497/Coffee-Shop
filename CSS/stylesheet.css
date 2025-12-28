@@ -257,6 +257,7 @@ form {
     padding: 10px;
     display: flex;
     margin: 10px;
+    justify-content: center;
 }
 
 fieldset {
@@ -308,3 +309,4 @@ input[type=submit]:hover {
 .star::before {
     color: red;
     content: "*";
+}
