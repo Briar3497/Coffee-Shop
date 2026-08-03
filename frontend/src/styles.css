@@ -45,7 +45,7 @@ nav {
     color: #c09a7f;
  }
 
- .banner {
+.banner {
     height: 10.75vh;
     width: 100%;
  }
@@ -118,19 +118,22 @@ address p {
 }
 
  /*Main body layouts*/
-main.cafe {
+.cafe {
     background-image: url("assets/images/cafe-interior.jpg");
     background-size: cover;
     background-position: center;
     padding: 40px;
+    margin-top: 2rem;
     border-radius: 5px;
     border: 2px solid black;
+    height: 55vh
  }
 
 .backdrop {
-    margin: 30px;
+    margin: 2rem;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid black;
+    height: 70%;
  }
 
 #home-intro, main p {
