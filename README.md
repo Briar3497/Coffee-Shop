@@ -124,10 +124,6 @@ Run the Angular application and the Spring Boot server, ensuring the database is
 
 ---
 
-# 📬 Contact & Socials
-
----
-
 ## ⚔️ Farewell, Adventurer
 
 > *"May your coffee be strong, your books be captivating, and your critical hits always be natural 20s."*
