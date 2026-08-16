@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: 'DnD';
-    src: url('assets/fonts/BreatheFireIii-PKLOB.ttf') format('truetype');
+    src: url('/assets/fonts/BreatheFireIii-PKLOB.ttf') format('truetype');
 }
 
 .DnD-font {
@@ -19,14 +19,14 @@
 }
 
 #DnD {
-    background-image: url("assets/images/DandD.jpg");
+    background-image: url("/assets/images/DandD.jpg");
     background-size: cover;
     background-position: center;
     
 }
 
 #murder-mystery {
-    background-image: url("assets/images/murder_mystery.jpg");
+    background-image: url("/assets/images/murder_mystery.jpg");
     background-size: cover;
     background-position: center;
     

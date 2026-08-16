@@ -1,3 +1,28 @@
+header {
+    background-color: #4d3626;
+    border-radius: 5px;
+    padding: 20px;
+    border: 2px solid black;
+    color: #c09a7f;
+ }
+
+main {
+    background-color: #c09a7f;
+    border-radius: 5px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+footer {
+    background-color: #4d3626;
+    border-radius: 5px;
+    padding: 20px 20px 20px 20px;
+    border: 2px solid black;
+    color: #c09a7f;
+    display: flex;
+    flex-direction: column;
+}
+
 /*Header layout*/
 nav {
     display: grid;
@@ -58,21 +83,6 @@ a > img {
     border: 2px solid black;
     color: #c09a7f;
 }
-
- /*Main body layouts*/
- .title {
-    font-size: 40px;
-    font-style: italic;
-    text-align: center;
-}
-
-.container {
-    padding: 40px;
-    margin: 20px;
-    border-radius: 5px;
-    border: 2px solid black;
-}
-
 
 /*Footer layout*/
 address {

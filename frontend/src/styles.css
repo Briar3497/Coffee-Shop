@@ -1,35 +1,26 @@
 /*Overall layout*/
 html {
     background-color: #1b130e;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     display: grid;
     grid-template-rows: 128.7px auto 360px;
     padding: 2px;
+    width: 98vw;
 }
 
-header {
-    background-color: #4d3626;
-    border-radius: 5px;
-    padding: 20px;
-    border: 2px solid black;
-    color: #c09a7f;
- }
-
-main {
-    background-color: #c09a7f;
-    border-radius: 5px;
-    padding: 20px;
-    border: 2px solid black;
+.title {
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
 }
 
-footer {
-    background-color: #4d3626;
+.container {
+    padding: 40px;
+    margin: 20px;
     border-radius: 5px;
-    padding: 20px 20px 20px 20px;
     border: 2px solid black;
-    color: #c09a7f;
-    display: flex;
-    flex-direction: column;
 }
