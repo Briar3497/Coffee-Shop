@@ -22,8 +22,11 @@ public class Product {
     @Column(name = "product_name")
     private String productName;
 
-    @Column(name = "product_image")
+    @Column(name = "product_img")
     private String productImage;
+
+    @Column(name = "product_img_alt")
+    private String productImageAlt;
 
     @Column(name = "product_descript")
     private String productDescription;
