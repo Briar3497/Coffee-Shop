@@ -1,0 +1,96 @@
+/*Header layout*/
+nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "grid-left grid-right";
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #c09a7f;
+ }
+
+.banner {
+    height: 10.75vh;
+    width: 100%;
+ }
+
+nav a {
+    display: flex;
+    color: #c09a7f;
+    text-decoration: none;
+    align-items: center;
+ }
+
+nav > div {
+    display: flex;
+    flex-direction: row; 
+ }
+
+a > img {
+    width: 100px;
+ }
+
+#grid-right {
+    grid-area: grid-right;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+
+#grid-right a:hover {
+    color: white;
+    text-decoration: none;
+ }
+
+#grid-left {
+    grid-area: grid-left;
+    justify-content: left;
+    align-items: center;
+ }
+
+#float {
+    position: fixed;
+    top: 0px;
+    left: 8px;
+    width: 95.2vw;
+    height: 94px;
+    background-color: #4d3626;
+    border-radius: 5px;
+    padding: 20px;
+    border: 2px solid black;
+    color: #c09a7f;
+}
+
+ /*Main body layouts*/
+ .title {
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+}
+
+.container {
+    padding: 40px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+
+/*Footer layout*/
+address {
+    display: flex;
+    gap: 10px;
+}
+
+address p {
+    width: 150px;
+    color: #c09a7f;
+
+}
+
+.foot-title, .contact {
+    text-decoration: underline;
+}
+
+.phone {
+    color: #c09a7f;
+    text-decoration: none;
+}

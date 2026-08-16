@@ -1,0 +1,26 @@
+.cafe {
+    background-image: url("assets/images/cafe-interior.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    margin-top: 2rem;
+    border-radius: 5px;
+    border: 2px solid black;
+    height: 55vh
+ }
+
+.backdrop {
+    margin: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    height: 70%;
+ }
+
+#home-intro, main p {
+    margin: 5%;
+}
+
+#line1 {
+    font-size: 24px;
+    font-style: italic;
+}

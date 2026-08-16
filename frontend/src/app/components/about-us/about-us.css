@@ -1,0 +1,62 @@
+.about {
+    font-size: 20px;
+    border-bottom: 2px solid black;
+}
+
+form {
+    padding: 10px;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+
+fieldset {
+    width: 40vw;
+}
+
+label {
+    width: 150px;
+    text-align: right;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+input[type=text], input[type=email] {
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+textarea {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    background-color: #4d3626;
+    color: #EAEFEF;
+    width: 150px;
+    height: 40px;
+    justify-content: end;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    color: #f8d678;
+}
+
+#form-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+#form-flex > label {
+    margin-bottom: 5px;
+}
+
+.star::before {
+    color: red;
+    content: "*";
+}
