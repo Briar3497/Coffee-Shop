@@ -19,14 +19,13 @@
 }
 
 #DnD {
-    background-image: url("assets/images/DandD.jpg");
+    background-image: url("images/DandD.jpg");
     background-size: cover;
     background-position: center;
     
 }
 
 #murder-mystery {
-    background-image: url("/assets/images/murder_mystery.jpg");
     background-size: cover;
     background-position: center;
     
