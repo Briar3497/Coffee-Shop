@@ -1,5 +1,5 @@
 .cafe {
-    background-image: url("/assets/images/cafe-interior.jpg");
+    background-image: url("assets/images/cafe-interior.jpg");
     background-size: cover;
     background-position: center;
     padding: 40px;
