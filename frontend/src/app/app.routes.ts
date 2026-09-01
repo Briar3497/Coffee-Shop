@@ -5,6 +5,7 @@ import { AboutUs } from './components/about-us/about-us';
 import { Home } from './components/home/home';
 
 export const routes: Routes = [
+    {path: "", redirectTo: "home", pathMatch: "full"},
     {path: "home", component: Home},
     {path: "menu", component: Menu},
     {path: "events", component: Events},

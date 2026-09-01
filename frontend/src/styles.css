@@ -24,3 +24,14 @@ body {
     border-radius: 5px;
     border: 2px solid black;
 }
+
+@font-face {
+    font-family: 'DnD';
+    src: url('/fonts/BreatheFireIii-PKLOB.ttf') format('truetype');
+}
+
+.cafe {
+    background-image: url("/images/cafe-interior.jpg");
+    background-size: cover;
+    background-position: center;
+}

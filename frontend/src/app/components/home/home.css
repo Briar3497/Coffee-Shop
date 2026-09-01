@@ -1,7 +1,4 @@
 .cafe {
-    background-image: url("images/cafe-interior.jpg");
-    background-size: cover;
-    background-position: center;
     padding: 40px;
     margin-top: 2rem;
     border-radius: 5px;

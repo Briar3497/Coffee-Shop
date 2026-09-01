@@ -9,27 +9,8 @@
     text-align: center;
 }
 
-@font-face {
-    font-family: 'DnD';
-    src: url('/fonts/BreatheFireIii-PKLOB.ttf') format('truetype');
-}
-
 .DnD-font {
     font-family: 'DnD';
-}
-
-#DnD {
-    background-image: url("/images/DandD.jpg");
-    background-size: cover;
-    background-position: center;
-    
-}
-
-#murder-mystery {
-    background-image: url("/images/murder_mystery.jpg");
-    background-size: cover;
-    background-position: center;
-    
 }
 
 .event-descript {
