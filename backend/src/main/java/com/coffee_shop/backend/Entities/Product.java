@@ -7,6 +7,8 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "products")
@@ -16,7 +18,7 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "product_id")
     private Long id;
 
     @Column(name = "product_name")
@@ -34,9 +36,21 @@ public class Product {
     @Column(name = "product_price")
     private Double productPrice;
 
-    //TODO: add category
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(
+            name = "product_flavor",
+            joinColumns = @JoinColumn(name = "product_id"),
+            inverseJoinColumns = @JoinColumn(name = "flavor_id")
+    )
+    private Set<Flavor> flavor = new HashSet<>();
 
-    //TODO: add flavor
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(
+            name = "product_category",
+            joinColumns = @JoinColumn(name = "product_id"),
+            inverseJoinColumns = @JoinColumn(name = "category_id")
+    )
+    private Set<Category> category = new HashSet<>();
 
     @CreationTimestamp
     @Column(name = "created_date")
