@@ -24,7 +24,7 @@
                 "input": "public"
               }
             ],
-            "externalDependencies": [ "assets/*" ],
+            "externalDependencies": [ "public/*" ],
             "styles": [
               "src/styles.css"
             ]
