@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -22,5 +21,5 @@ public class Flavor {
     private String flavorName;
 
     @ManyToMany(mappedBy = "flavor")
-    private Set<Product> product = new HashSet<>();
+    private Set<Product> product;
 }

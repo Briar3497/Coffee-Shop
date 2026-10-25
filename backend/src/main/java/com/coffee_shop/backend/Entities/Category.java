@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -21,6 +20,6 @@ public class Category {
     @Column(name = "category_type")
     private String categoryType;
 
-    @ManyToMany(mappedBy = "category")
-    private Set<Product> product = new HashSet<>();
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "category")
+    private Set<Product> product;
 }

@@ -1,19 +1,16 @@
 package com.coffee_shop.backend.Entities;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.util.Date;
-import java.util.HashSet;
 import java.util.Set;
 
 @Entity
 @Table(name = "products")
-@Getter
-@Setter
+@Data
 public class Product {
 
     @Id
@@ -42,15 +39,11 @@ public class Product {
             joinColumns = @JoinColumn(name = "product_id"),
             inverseJoinColumns = @JoinColumn(name = "flavor_id")
     )
-    private Set<Flavor> flavor = new HashSet<>();
+    private Set<Flavor> flavor;
 
-    @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(
-            name = "product_category",
-            joinColumns = @JoinColumn(name = "product_id"),
-            inverseJoinColumns = @JoinColumn(name = "category_id")
-    )
-    private Set<Category> category = new HashSet<>();
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "category_id")
+    private Category category;
 
     @CreationTimestamp
     @Column(name = "created_date")
