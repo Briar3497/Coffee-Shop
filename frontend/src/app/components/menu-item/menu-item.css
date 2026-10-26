@@ -1,0 +1,49 @@
+.header-element {
+    font-size: 60px;
+    font-style: italic;
+    text-align: center;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.menu-category {
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.menu-item {
+    border: 2px solid #1b130e;
+    border-radius: 5px;
+    background-color: #4d3626;
+    color: #c09a7f; 
+}
+
+.descrip {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding: 8px;
+    min-height: 80px;
+}
+
+.flavor {
+    font-style: italic;
+    padding: 8px;
+}
+
+.item-name {
+    padding: 8px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.menu-item img {
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    margin: auto;
+}
